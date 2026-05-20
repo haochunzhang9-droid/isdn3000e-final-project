@@ -42,7 +42,7 @@ class TicTacToeVisualizerNode(Node):
         self.state_lock = threading.Lock()
 
         self.server = viser.ViserServer(
-            host="0.0.0.0", port=8080, label="ISDN3000E Tic-Tac-Toe"
+            host="0.0.0.0", port=8081, label="ISDN3000E Tic-Tac-Toe"
         )
         self.server.scene.add_grid("/grid", width=1.0, height=1.0)
 

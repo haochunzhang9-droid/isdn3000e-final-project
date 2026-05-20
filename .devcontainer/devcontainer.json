@@ -10,20 +10,17 @@
   ],
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
-  "forwardPorts": [
-    8080,
-    6080
-  ],
-  "portsAttributes": {
-    "8080": {
-      "label": "viser GUI",
-      "onAutoForward": "notify"
-    },
-    "6080": {
-      "label": "noVNC GUI",
-      "onAutoForward": "notify"
-    }
+"forwardPorts": [8081, 6080],
+"portsAttributes": {
+  "8081": {
+    "label": "viser GUI",
+    "onAutoForward": "openBrowser"
   },
+  "6080": {
+    "label": "noVNC GUI",
+    "onAutoForward": "notify"
+  }
+}
   "postCreateCommand": "bash .devcontainer/post-create.sh",
   "customizations": {
     "vscode": {
